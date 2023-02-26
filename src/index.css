@@ -1,10 +1,45 @@
+@font-face {
+  font-family: 'roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), url(./fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'roboto';
+  font-style: bold;
+  font-weight: 600;
+  src: local('Roboto'), url(./fonts/Roboto/Roboto-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'roboto-slab';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Roboto'), url(./fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'roboto-slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), url(./fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'roboto-slab';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Roboto'), url(./fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf) format('truetype');
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
 }
 
 code {
