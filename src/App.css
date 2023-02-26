@@ -26,6 +26,14 @@ html[data-theme="light"] {
   --link-ani-color: #121212;
 }
 
+img {
+  width: 75vw;
+  margin-left: 5vw;
+  margin-top: 10vh;
+  margin-bottom: 0;
+  min-width: 55vw;
+}
+
 .hidden {
   opacity: 0;
 }

@@ -1,9 +1,12 @@
 import "./Entry.css";
 import { EntryProps, NoDemoEntryProps, NoDocuEntryProps, NoLinksEntryProps } from "../types";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const HasLinks = ({ id, title, details, demoLink, docuLink }: EntryProps) => {
     return (
-        <div className="entry">
+        <div className="entry" data-aos="fade-up">
             <div className="subheader">
                 <h3>task {id}</h3>
             </div>
@@ -27,7 +30,7 @@ const HasLinks = ({ id, title, details, demoLink, docuLink }: EntryProps) => {
 
 const NoDemoLink = ({ id, title, details, docuLink }: NoDemoEntryProps) => {
     return (
-        <div className="entry">
+        <div className="entry" data-aos="fade-up">
             <div className="subheader">
                 <h3>task {id}</h3>
             </div>
@@ -49,7 +52,7 @@ const NoDemoLink = ({ id, title, details, docuLink }: NoDemoEntryProps) => {
 
 const NoDocuLink = ({ id, title, details, demoLink }: NoDocuEntryProps) => {
     return (
-        <div className="entry">
+        <div className="entry" data-aos="fade-up">
             <div className="subheader">
                 <h3>task {id}</h3>
             </div>
@@ -71,7 +74,7 @@ const NoDocuLink = ({ id, title, details, demoLink }: NoDocuEntryProps) => {
 
 const NoLinks = ({ id, title, details }: NoLinksEntryProps) => {
     return (
-        <div className="entry">
+        <div className="entry" data-aos="fade-up">
             <div className="subheader">
                 <h3>task {id}</h3>
             </div>
