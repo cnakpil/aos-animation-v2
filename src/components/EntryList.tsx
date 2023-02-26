@@ -17,6 +17,7 @@ const EntryList = () => {
             {assignments.map((entry, index) => {
                 return (
                     <Entry
+                        key={index}
                         id={entry.id}
                         title={entry.title}
                         details={entry.details}

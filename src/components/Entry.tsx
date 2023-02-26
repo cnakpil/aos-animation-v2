@@ -89,10 +89,11 @@ const NoLinks = ({ id, title, details }: NoLinksEntryProps) => {
     );
 }
 
-const Entry = ({ id, title, details, demoLink, docuLink }: EntryProps) => {
+const Entry = ({ key, id, title, details, demoLink, docuLink }: EntryProps) => {
     if ((demoLink === "/") && (docuLink === "/")) {
         return (
             <NoLinks
+                key={key}
                 id={id}
                 title={title}
                 details={details}
@@ -101,6 +102,7 @@ const Entry = ({ id, title, details, demoLink, docuLink }: EntryProps) => {
     } else if ((demoLink !== "/") && (docuLink === "/")) {
         return (
             <NoDemoLink
+                key={key}
                 id={id}
                 title={title}
                 details={details}
@@ -110,6 +112,7 @@ const Entry = ({ id, title, details, demoLink, docuLink }: EntryProps) => {
     } else if ((demoLink === "/") && (docuLink !== "/")) {
         return (
             <NoDocuLink
+                key={key}
                 id={id}
                 title={title}
                 details={details}
@@ -119,6 +122,7 @@ const Entry = ({ id, title, details, demoLink, docuLink }: EntryProps) => {
     } else {
         return (
             <HasLinks
+                key={key}
                 id={id}
                 title={title}
                 details={details}
