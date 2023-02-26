@@ -1,4 +1,5 @@
 import React from 'react';
+import { StringLiteral } from 'typescript';
 
 export type CheckboxProps = {
     key: React.Key;
@@ -13,8 +14,15 @@ export type NavLinkProps = {
     target: string;
     className: string;
 }
+// export type EntryProps = {
+//     index: number;
+//     docLink: string;
+//     demoLink: string;
+// }
 export type EntryProps = {
-    number: number;
-    docLink: string;
-    demoLink: string;
+    id: string;
+    title: string;
+    details: string;
+    demoLink: string
+    docuLink: string;
 }
