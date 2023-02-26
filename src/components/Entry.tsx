@@ -14,10 +14,10 @@ const HasLinks = ({ id, title, details, demoLink, docuLink }: EntryProps) => {
                 </p>
                 <div className="detail-links">
                     <p>
-                        <a href={demoLink} target="_blank">LIVE DEMO</a>
+                        <a href={demoLink} target="_blank" rel="noreferrer">LIVE DEMO</a>
                     </p>
                     <p>
-                        <a href={docuLink} target="_blank">DOCUMENTATION</a>
+                        <a href={docuLink} target="_blank" rel="noreferrer">DOCUMENTATION</a>
                     </p>
                 </div>
             </div>
@@ -39,7 +39,7 @@ const NoDemoLink = ({ id, title, details, docuLink }: NoDemoEntryProps) => {
                 <div className="detail-links">
                     <p><s>LIVE DEMO</s></p>
                     <p>
-                        <a href={docuLink} target="_blank">DOCUMENTATION</a>
+                        <a href={docuLink} target="_blank" rel="noreferrer">DOCUMENTATION</a>
                     </p>
                 </div>
             </div>
@@ -60,7 +60,7 @@ const NoDocuLink = ({ id, title, details, demoLink }: NoDocuEntryProps) => {
                 </p>
                 <div className="detail-links">
                     <p>
-                        <a href={demoLink} target="_blank">LIVE DEMO</a>
+                        <a href={demoLink} target="_blank" rel="noreferrer">LIVE DEMO</a>
                     </p>
                     <p><s>DOCUMENTATION</s></p>
                 </div>
