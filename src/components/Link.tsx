@@ -1,5 +1,5 @@
 import "./NavLink.scss";
-import { NavLinkProps } from "./types";
+import { NavLinkProps } from "../types";
 
 const Link = ({ className, href, target, children }: NavLinkProps) => {
     return (

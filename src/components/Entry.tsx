@@ -1,5 +1,5 @@
 import "./Entry.css";
-import { EntryProps, NoDemoEntryProps, NoDocuEntryProps, NoLinksEntryProps } from "./types";
+import { EntryProps, NoDemoEntryProps, NoDocuEntryProps, NoLinksEntryProps } from "../types";
 
 const HasLinks = ({ id, title, details, demoLink, docuLink }: EntryProps) => {
     return (
