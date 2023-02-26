@@ -1,5 +1,4 @@
 import React from 'react';
-import { StringLiteral } from 'typescript';
 
 export type CheckboxProps = {
     key: React.Key;
